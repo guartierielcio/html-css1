@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw (tamanho da tela - largura), vh(altura da tela), % 
+            */
+            font-size: 16px; /*essa é a tamnho natural do site , pode usar o 1em que é mesmo tamnho igual*/
+
+            /* lighter normal bold bolder -  peso da fonte*/
+        }
+        h1{
+            font-family: 'Work Sans' sans-serif;
+            font-weight: bolder;
+            font-size: 2.5em;
+            font-style: italic;
+            text-decoration: underline;
+        }
+       h2{
+            /*Podemos utilizar nessa sequência em uma linha:
+            font-style -> font-weight -> font-size -> font-family*/
+            font: italic bolder 2em 'Word Sans';
+       } 
+       
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laudantium minus nemo eaque mollitia error atque blanditiis quaerat veniam voluptas ab repellat impedit sapiente veritatis dolores deleniti placeat illo omnis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptate nisi neque magni mollitia obcaecati dicta earum porro molestias ullam quod, optio sapiente rerum eos sit quasi nihil necessitatibus magnam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci cupiditate ut magni hic voluptatum blanditiis pariatur quae inventore, nulla, rerum a, veritatis aperiam. Quod rem nobis ea vel ullam repellendus.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint maxime voluptas velit reiciendis neque adipisci quam dolorum facere necessitatibus, sed alias. Deserunt placeat at cum quis. Odit animi vero deserunt.</p>
+
+
+</body>
+</html>

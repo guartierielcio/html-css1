@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <h2>Consome seu serviço de hospedagem</h2>
+    <p>Este vídeo está hospedado no meu servidor.</p>
+
+    <video src="midia/Meu-Video2.mkv" width="560" poster="imagem/paisagem1.jpg" controls></video>
+
+    <h1>Inserindo vídeos hopedados localmente com outra tag</h1>
+    <h2>Consome seu serviço de hospedagem</h2>
+    <p>Este vídeo está hospedado no meu servidor.</p>
+
+    <video width="560" poster="imagem/paisagem1.jpg" controls>
+        <source src="midia/Meu-Video2.mkv"  type="video/mkv">
+        <source src="midia/Meu-Video.webm"  type="video/webm">
+        <source src="midia/Meu-Video.mp4"  type="video/mp4">
+        <source src="midia/Meu-Video2.ogv"  type="video/ogg">
+       <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <h2>Não consome seu serviço de hospedagem</h2>
+    <p>=========================================</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mp9dctTsgg0?si=bQQfpv5-Dlu1oTeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserindo videos do Vimeo</h1>
+    <h2>Não consome seu serviço de hospedagem</h2>
+    <iframe src="https://player.vimeo.com/video/288069411?h=fa72dca0d5&autoplay=1&color=ff9933&title=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>
