@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{ /* O asterisco antes da chave diz que essas medidas serão para todo o conteúdo que está no body depois regulamos separadamente*/
+  margin: 0px;
+  padding: 0px;  
+}
+
+html, body{
+    min-height: 100vh;/*tamanho mínimo do boy e html vh viewport área visível da altura*/
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header >h1{
+    padding-top: 50px;
+    font-variant: small-caps;/*um estilo de maiúscula*/
+}
+
+header >p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+
+}
+
+section{
+    padding-top: 10vh;/*os blocos de letras ficam com espaços em cima*/
+    padding-bottom: 10vh; /*os blocos de letras ficam com espaços embaixo*/
+    line-height: 2em;/*espaçamento entre linhas*/
+    padding-left: 30px;/*margem vai mais para esquerda*/
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(57, 55, 55);
+    color: white;
+}
+
+section.imagem > p{
+    width: 400px; /*delemita um espaço */
+    background-color: rgb(0, 0, 0, 0.285);/*dar uma cor no espaço de 400px*/
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
