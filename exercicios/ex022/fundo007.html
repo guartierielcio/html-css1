@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{ /*o que contem*/
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 96dvh;
+            padding: 10px;
+            
+            background-color: purple;
+        
+        }
+        #conteudo{/*é o conteudo do contem*/
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /*como a posição é absoluta podemos mexer com o posicionaento ou em px ou %*/
+
+            left: 50%; /*aqui é positivo*/
+            top: 50%;
+
+            transform: translate(-50%, -50%);/*fica centralizado a caixa roxa*/
+            
+
+
+        }
+    </style>
+
+
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
