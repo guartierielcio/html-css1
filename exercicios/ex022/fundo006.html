@@ -3,27 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Div Semântica</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
-            height: 100vh; /*altura do body*/
-            background-color: black;
+           height: 100vh;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover; /*estica a imagem para se adptar a tela sem que o fundo do body apareça*/
+            background-repeat: repeat-y;
+            background-size: cover; /*estica a imagem para se adptar a tela sem que o fundo do body apareça
+            background-attachment: fixed; /*deixa o texto ronando e a imagem fica fixa*/
+            /*shorthand - bacgraund
+                color> image> position> repeat> [size o cover tem que ser separado ainda]> attachmente (essa é a sequência) para deixar tudo em uma linha  conforme abaixo*/
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main{
             background-color: white; /*fundo do conteudo da pagina nesse caso i texto que está dentro do main*/
-            width: 400px; /*sua largura*/
-            height: 300px; /*sua altura*/
+            max-width: 500px;
+            width: 450px; /*sua largura*/
             padding: 10px; /*espaço entre o texto e a borda interna*/
-            text-align: justify; /*texto justificado*/
-            text-indent: 30px;/*margem do primeiro parágrafo*/
             margin: auto; /*centraliza*/
             border: 1px solid darkblue; /*borda do texto*/
             border-radius: 15px; /*arrendondamento das bordas da "caixa" onde está o textp*/
+        }
+
+        main h1{
+            text-align: center;
+        }
+
+        main p{
+            text-align: justify; /*texto justificado*/
+            text-indent: 30px;/*margem do primeiro parágrafo*/
         }
     </style>
 </head>
@@ -31,6 +44,14 @@
     <main>
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tenetur nulla dolorum aperiam, repellat eum earum sapiente quidem. Ab dolores dolorum voluptas est quidem ipsam pariatur, eligendi porro eveniet aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facere possimus alias tempore cumque eveniet eaque quibusdam laboriosam minima, accusamus vel cupiditate. Esse necessitatibus nihil quas, illo porro fugit maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo illum soluta eius eveniet? Voluptates quaerat perspiciatis repellendus! Quisquam explicabo, molestiae sapiente corrupti et tenetur? Libero velit rerum laboriosam quia assumenda.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat laborum harum, ipsam dolore nobis fugit pariatur officia, nihil iure aliquid, exercitationem suscipit neque? Quisquam iste recusandae deserunt quo labore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel temporibus atque, vitae minus ducimus facere nemo nostrum nisi eveniet officia tempora! Aut necessitatibus non ad asperiores pariatur saepe obcaecati quam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel temporibus atque, vitae minus ducimus facere nemo nostrum nisi eveniet officia tempora! Aut necessitatibus non ad asperiores pariatur saepe obcaecati quam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel temporibus atque, vitae minus ducimus facere nemo nostrum nisi eveniet officia tempora! Aut necessitatibus non ad asperiores pariatur saepe obcaecati quam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel temporibus atque, vitae minus ducimus facere nemo nostrum .</p>
+  
+
+        
     </main>
 </body>
 </html>
