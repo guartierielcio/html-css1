@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table{
+    width: 400px;
+    border-collapse: collapse; /*o normal é ficar cada célua separada, para dar uma cara de tabela juntamos com collapse*/
+    border: 5px solid black;
+}
+
+tr.linha{ /*linha da tabela - class=linha A2 a C2* e A4 a C4*/
+    background-color: rgba(114, 110, 110, 0.737);
+}
+
+td.dado{ /*class=dado para as linhas A2 a C2* e A4 a C4*/
+    color: rgb(243, 237, 237); 
+    
+}
+td{ /*dados da tabela*/
+    border:2px solid rgb(16, 15, 15);
+    padding:8px;
+    text-align: center;
+}
