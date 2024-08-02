@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table{
+    width: 550px;/* coloquei largura de 20px na posição e 50px na população , sendo a largura da tabela 500px, o estado fica com 430px o que falta para 500*/
+    height: 300;
+    border-collapse: collapse;
+    position: relative; /*para o cabeçalho ficar fixo temos que colocar esse recursos e outros abaixo*/
+}
+
+thead > tr > th{
+    position: sticky; /*"colável"*/
+    top: -1px; /*deixar com top negativo , melhor que zero*/
+    background-color: rgba(0, 0, 0, 0.700)/*a cordo cabeçablho acomanhar a fonte dele [Posição - Estado - População, se não colocar o backgroud, parece que as letras ficam flutuando se fundo*/
+}
+
+h1{
+    padding-left: 85px;
+}
+
+h2{
+    padding-left: 175px;
+    padding-bottom: 5px;
+}
+
+td, th{ /*dados da tabela*/
+    border:2px solid black;
+    height: 45px;
+}
+
+tbody > tr:nth-child(odd){ /*as linhas impares com uma background-color: */
+    /*outra opção para diferenciar tr:nth-child(2n-1 é igual a impar)*/
+    background-color:rgba(23, 23, 23, 0.819);
+    color: whitesmoke; /*cor fonte linhas impares*/
+}
+tbody >tr:nth-child(even){/*as linhas pares com uma background-color: */
+        /*outra opção para diferenciar tr:nth-child(2n é igual a par)*/
+    background-color: rgba(0, 134, 136, 0.511);
+    color: rgb(50, 50,50);/*cor fonte linhas pares*/
+}
+
+td.posicao{
+    text-align: center;
+}
+caption{
+    font-size: 1.5em;
+    color:whitesmoke;
+    font-weight: bolder;
+    border: solid black;
+    border-bottom: 0px;
+    padding: 15px;
+    background-color: gray;
+}
+thead , tfoot{
+    background-color: rgba(0, 0, 0, 0.600);
+    color: azure;
+    font-size: 1.1em;
+}
+
+td.num{
+    text-align: right;
+    
+}
