@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table{
+    width: 500px;/* coloquei largura de 20px na posição e 50px na população , sendo a largura da tabela 500px, o estado fica com 430px o que falta para 500*/
+    border-collapse: collapse;
+}
+
+td, th{ /*dados da tabela*/
+    border:2px solid black;
+    padding:10px;
+}
+
+td.posicao{
+    text-align: center;
+}
+caption{
+    font-size: 1.5em;
+    color:whitesmoke;
+    font-weight: bolder;
+    border: solid black;
+    border-bottom: 0px;
+    padding: 15px;
+    background-color: gray;
+}
+thead , tfoot{
+    background-color: rgba(0, 0, 0, 0.761);
+    color: azure;
+}
+
+td.num{
+    text-align: right;
+}
