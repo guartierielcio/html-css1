@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+caption{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(58, 63, 62, 0.687);
+    border: 1.5px solid black;
+    border-bottom: none;
+    color: wheat;
+}
+
+th{
+    border: 1.5px solid black;
+    background-color: gray;
+    padding: 10px;
+    color: wheat;
+}
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    color: rgb(2, 2, 22);
+}
+
+
