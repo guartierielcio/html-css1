@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    display: flex; /*define o elemento como um contêiner flexível, habilitando o Flexbox para alinhar e distribuir espaço entre itens dentro do contêiner.*/
+    flex-direction: column;/*define a direção dos itens flexíveis dentro do contêiner. Usar column faz com que os itens sejam dispostos em uma coluna, um abaixo do outro.*/
+    align-items: center;
+    flex-direction: column;
+}
+
+.amarelo{
+    background-color: yellow;
+}
+
+.verde{
+    background-color: green
+}
+
+.azul{
+    background-color: rgba(85, 160, 173, 0.95);
+}
+
+table{
+    width: 500px;
+    border-collapse: collapse;    
+}
+
+caption{
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding: 8px;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+    }

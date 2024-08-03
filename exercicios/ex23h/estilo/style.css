@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    display: flex; /*define o elemento como um contêiner flexível, habilitando o Flexbox para alinhar e distribuir espaço entre itens dentro do contêiner.*/
+    flex-direction: column;/*define a direção dos itens flexíveis dentro do contêiner. Usar column faz com que os itens sejam dispostos em uma coluna, um abaixo do outro.*/
+    align-items: center;
+    flex-direction: column;
+}
+
+col.cseq{
+    background-color: yellow;
+}
+
+col.cnome{
+    background-color: green
+}
+
+col.csexo{
+    background-color: rgba(255, 0, 0, 0.761);
+}
+
+col.cidade{
+    background-color: blue;
+}
+
+col.cprof{
+    background-color:orangered
+}
+table{
+    width: 500px;
+    border-collapse: collapse;    
+}
+
+caption{
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding: 8px;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+    }
