@@ -9,10 +9,55 @@
 <body>
     <h1>Exercício de Tabelas</h1>
     <table>
-        <caption>FILMES FAVORITOS</caption>
+        <caption>Filmes Favoritos</caption>
         <thead>
-            
+            <tr>
+               <th scope="col">Grupos</th> <!--é scope="col" devido abaixo temos Mulheres e Homens na mesma Col-->
+               <th scope="col">Nomes</th><!--é scope="col" devido abaixo temos os nomes na mesma Col-->
+               <th colspan="3" scope="colgroup">Filmes</th> <!-- é colgroup pq Filmes tem colunas mescladas-->
+            </tr>           
         </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th> <!--é scope="row" está mesclado as linhas nomes das pessoas e dos filmes-->
+                <td>Mortícia Santos</td>
+                <td>Star Treck</td>
+                <td>Rambo</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Mile Ranheta Souza</td>
+                <td>Hulk</td>
+                <td>Super Man</td>
+                <td>As Branquelas</td>
+            </tr>
+            <tr>
+                <td>Olívia Palito Silva</td>
+                <td>Os Três Patetas</td>
+                <td>Rambo II</td>
+                <td>Arquivo X</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="colgroup">Homens</th> <!--é scope="row" está mesclado as linhas nomes das pessoas e dos filmes-->
+                <td>Mr. Bem Oliveira</td>
+                <td>O Irlandes</td>
+                <td>X-Men</td>
+                <td>Matrix</td>
+            </tr>
+            <tr>
+                <td>Homer Simpson</td>
+                <td>Toy Story</td>
+                <td>Obivilion</td>
+                <td>Missão Impossível</td>
+            </tr>
+            <tr>
+                <td>Mr Maggo Pires</td>
+                <td>Além</td>
+                <td>Star Wars</td>
+                <td>Homem Aranha</td>
+            </tr>
+        </tbody>
+
     </table>
 </body>
 </html>
